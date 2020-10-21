@@ -1,4 +1,92 @@
-/* *********************************** */
-/* *** Estilos SOLO para index.html *** */
-/* *********************************** */
+.contenedor{
+    height:100vh;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:1fr 1fr 1fr;
+    
+}
+a{
+    text-decoration: none;
+}
 
+
+.circulo_arriba{
+    width:200px;
+    height:200px;
+    background-color: black;
+    border-radius:50%;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: center;
+}
+.circulo_arriba:hover{
+    background-color:lightblue;
+    cursor: pointer;
+}
+.circulo_abajo{
+    width:200px;
+    height:200px;
+    background-color: black;
+    border-radius:50%;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    justify-self: center;
+}
+.circulo_abajo:hover{
+    background-color:red;
+    cursor: pointer;
+}
+.circulo_derecha{
+    width:200px;
+    height:200px;
+    background-color: black;
+    border-radius:50%;
+    grid-row: 2/3;
+    grid-column: 3/4;
+    justify-self: center;
+}
+.circulo_derecha:hover{
+    background-color:green;
+    cursor: pointer;
+}
+.circulo_izquierda{
+    width:200px;
+    height:200px;
+    background-color: black;
+    border-radius:50%;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    justify-self: center;
+}
+.circulo_izquierda:hover{
+    background-color:blue;
+    cursor: pointer;
+}
+.contactar{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-size: 1.5em;
+    color:black;
+    font-weight: bold;
+    justify-self: flex-end;
+    align-self: center;
+}
+.contactar:hover{
+   
+   transform:scale(1.5);
+   
+}
+.formulario{grid-row: 2/3;
+    grid-column: 2/3;
+    font-size: 1.5em;
+    color:black;
+    font-weight: bold;
+    justify-self: flex-start;
+    align-self: center;
+
+}
+.formulario:hover{
+   
+    transform:scale(1.5);
+    
+ }
